@@ -1,4 +1,4 @@
 <?php 
 	echo "Edit from local";
-	echo "Commit and push";
+	echo "<br>Commit and push";
 ?>
