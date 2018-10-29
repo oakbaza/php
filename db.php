@@ -13,10 +13,8 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully";
 
-function get_all(){
-	$sql = "SELECT * 
-			FROM person";
-	$query = $conn->query($sql);
-	return $query;
-}
+$sql = "SELECT * 
+		FROM person";
+$query = $conn->query($sql);
+print_r($query->fetch_assoc());
 ?>
