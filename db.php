@@ -1,21 +1,16 @@
 <?php
-$servername = getenv("MYSQL_SERVICE_HOST");
-$username ="root";
-$password = getenv("database-root-password");
-$dbname = getenv("database-name");
-echo $servername."<br>".$username."<br>".$password."<br>";
-// Create connection
-$conn = new mysqli($servername, $username, $password,$dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else{
-	echo "Connected successfully";
+function connect(){
+	$servername = getenv("MYSQL_SERVICE_HOST");
+	$username ="root";
+	$password = getenv("database-root-password");
+	$dbname = getenv("database-name");
+	$con = mysqli_connect($servername,$username,$password,$dbname);
+	return $con;
 }
 
-$sql = "SELECT * 
-		FROM person";
-$query = $conn->query($sql);
-
+function get_all($con){
+	$sql = "SELECT * FROM person";
+	$query = mysqli_query($con,$sql);
+	return $query;
+}
 ?>
