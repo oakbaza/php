@@ -2,11 +2,13 @@
 table {
     border-collapse: collapse;
 	width: 60%;
-	align:center;
 }
 
 table, th, td {
     border: 1px solid black;
+}
+th,td{
+	text-align:center;
 }
 </style>
 <?php 
