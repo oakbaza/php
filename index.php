@@ -12,6 +12,7 @@ th,td{
 }
 thead{
 	background-color: #03a9f4;
+	color:white;
 }
 </style>
 <?php 
@@ -19,6 +20,8 @@ include_once('db.php');
 $t7_db = connect();
 $obj_ps = get_all($t7_db);
 ?>
+<div style="margin-top:64px">
+</div>
 <div class="container">
 	<table class="table table-bordered">
 		<thead>
