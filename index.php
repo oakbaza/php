@@ -10,14 +10,15 @@
 th,td{
 	text-align:center;
 }
+thead{
+	background-color: #03a9f4;
+}
 </style>
 <?php 
 include_once('db.php');
 $t7_db = connect();
 $obj_ps = get_all($t7_db);
 ?>
-<h1>Hello Myphp From Team7!</h1>
-<h1>Add Mysql</h1>
 <div class="container">
 	<table class="table table-bordered">
 		<thead>
