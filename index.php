@@ -1,3 +1,14 @@
+<style>
+table {
+    border-collapse: collapse;
+	width: 60%;
+	align:center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>
 <?php 
 include_once('db.php');
 $t7_db = connect();
