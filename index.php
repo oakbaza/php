@@ -1,3 +1,4 @@
+<title>PHP</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -39,4 +40,17 @@ $obj_ps = get_all($t7_db);
 	<?php	} ?>
 		</tbody>
 	</table> 
+</div>
+<div class="container" >
+	<form action="#" method="post">
+		<div class="form-group">
+		  <label for="usr">Name:</label>
+		  <input type="text" class="form-control" id="usr">
+		</div>
+		<div class="form-group">
+		  <label for="pwd">Surname:</label>
+		  <input type="text" class="form-control" id="pwd">
+		</div>
+		<button type="button" class="btn btn-success">Success</button>
+	</form>
 </div>
