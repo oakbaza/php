@@ -13,4 +13,10 @@ function get_all($con){
 	$query = mysqli_query($con,$sql);
 	return $query;
 }
+
+function insert($con,$fname,$lname){
+	$sql = "INSERT INTO person (firsname,lastname)
+	VALUES ($fname, $lname)";
+	mysqli_query($con,$sql);
+}
 ?>
